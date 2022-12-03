@@ -65,11 +65,3 @@ class FormatData:
         
         os.remove(filename)
         print("Fichier supprimé !")
-
-
-    def remove_data(file="", dataname=""):
-        if not os.path.isfile(file):
-            print("Le Fichier que vous essayez d'ouvrir n'existe pas dans votre disque !")
-        
-        with open(file, 'r', newline='\n') as csvfile:
-            lire = csv.reader(csvfile)
